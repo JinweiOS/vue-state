@@ -1,12 +1,25 @@
 <template>
   <div id="app">
-    <nav>
+    <view-one></view-one>
+    <ViewTwo></ViewTwo>
+    <!-- <nav>
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </nav>
-    <router-view/>
+    <router-view/> -->
   </div>
 </template>
+<script>
+import ViewOne from "./components/ViewOne.vue";
+import ViewTwo from "./components/ViewTwo.vue";
+export default {
+  name: "App",
+  components: {
+    ViewOne,
+    ViewTwo,
+  },
+};
+</script>
 
 <style lang="scss">
 #app {
